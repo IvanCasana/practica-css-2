@@ -1,0 +1,96 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+  /* Fondo de la página en color negro */
+  color: white;
+  /* Color del texto blanco */
+  margin: 0;
+}
+
+h1:hover {
+  transform: scale(1.1);
+  /* Aumenta ligeramente el tamaño al hacer hover */
+  filter: drop-shadow(0 0 20px rgba(0, 255, 255, 1))
+    /* Aumenta la intensidad del neón */
+    drop-shadow(0 0 40px rgba(0, 255, 255, 1))
+    /* Sombra más intensa */
+    drop-shadow(0 0 60px rgba(0, 255, 255, 1));
+  /* Aumenta el brillo */
+}
+
+h1 {
+  font-size: 50px;
+  /* Tamaño de fuente del h1 */
+  padding: 5px;
+  /* Espaciado interno del h1 */
+  filter: drop-shadow(0 0 10px rgba(0, 255, 255, 0.7))
+    /* Sombra de neón turquesa */
+    drop-shadow(0 0 20px rgba(0, 255, 255, 0.5))
+    /* Más brillo */
+    drop-shadow(0 0 30px rgba(0, 255, 255, 0.5));
+  /* Brillo adicional */
+  transition: transform 0.3s ease, filter 0.3s ease;
+  /* Efecto de transición suave en el cambio de transformación y sombra */
+}
+
+
+.navbar {
+  background-color: rgba(0, 255, 255, 0.1);
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  scrollbar-width: none;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  margin: 0;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  transform: scale(1.2);
+  /* Aumenta ligeramente el tamaño al hacer hover */
+  color: #ff5500;
+  filter: drop-shadow(0 0 20px #ff5500)
+    /* Aumenta la intensidad del neón */
+    drop-shadow(0 0 40px #ff5500)
+    /* Sombra más intensa */
+    drop-shadow(0 0 60px #ff5500);
+  /* Aumenta el brillo */
+}
+
+.navbar .active {
+  transform: scale(1.2);
+  /* Aumenta ligeramente el tamaño al hacer hover */
+  color: #ff5500;
+  filter: drop-shadow(0 0 20px #ff5500)
+    /* Aumenta la intensidad del neón */
+    drop-shadow(0 0 40px #ff5500)
+    /* Sombra más intensa */
+    drop-shadow(0 0 60px #ff5500);
+  /* Aumenta el brillo */
+}
+
+.responsive {
+  display: none;
+}
+
+.introduction {
+  text-align: center;
+  margin: 0 15%;
+}
+
+@media (max-width: 600px) {
+  .responsive {
+    display: block;
+    float: right;
+    padding: 12px;
+  }
+
+  a {
+    display: none;
+  }
+}

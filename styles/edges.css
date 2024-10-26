@@ -1,0 +1,74 @@
+.grid-container {
+    display: grid;
+    background-color: rgba(0, 255, 255, 0.324);
+    grid-template-columns: 33% 33% auto;
+    gap: 50px;
+    padding: 20px;
+    justify-content: space-evenly;
+    border: 20px solid rgba(0, 255, 255, 0.324);
+    border-radius: 100px;
+    margin: 20px;
+
+}
+
+.grid-container div:hover {
+    transform: scale(1.3);
+}
+
+.grid-container :hover h5 {
+    font-size: 2em;
+    filter: drop-shadow(0 0 30px rgba(0, 0, 0, 1)) drop-shadow(0 0 60px rgba(0, 0, 0, 0.9)) drop-shadow(0 0 90px rgba(0, 0, 0, 0.8));
+}
+
+.grid-container>div {
+    background-color: aqua;
+    text-align: center;
+    align-content: center;
+    transition: all 0.5s ease, transform 0.5s ease;
+
+}
+
+.box {
+    width: 200px;
+    height: 50px;
+    font-size: 1.4em;
+    text-shadow: 2px 2px 0px black,
+        -2px 2px 0px black,
+        2px -2px 0px black,
+        -2px -2px 0px black;
+    transition: font-size 0.5s ease;
+    margin: 0 0 0 50px;
+
+}
+
+.solid {
+    border: 10px solid black;
+}
+
+.dotted {
+    border: 10px dotted black;
+}
+
+.dashed {
+    border: 5px dashed black;
+}
+
+.double {
+    border: 10px double black;
+}
+
+.groove {
+    border: 10px groove black;
+}
+
+.ridge {
+    border: 10px ridge black;
+}
+
+.inset {
+    border: 10px inset black;
+}
+
+.outset {
+    border: 10px outset black;
+}

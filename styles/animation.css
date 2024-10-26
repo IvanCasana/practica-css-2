@@ -1,0 +1,138 @@
+.box {
+    border: 2px solid black;
+    height: 10px;
+    width: 10px;
+    margin: 5px;
+    padding: 10px;
+    position: relative;
+}
+
+.box2 {
+    border: 2px solid black;
+    background-color: aqua;
+    height: 10px;
+    width: 20px;
+    margin: 5px;
+    padding: 10px;
+    position: relative;
+    transition: all 0.5s ease;
+
+}
+
+.container {
+    padding: 20px;
+    background-color: rgba(0, 255, 255, 0.324);
+    border-radius: 100px;
+    margin: 20px;
+    border: 20px solid rgba(0, 255, 255, 0.324);
+    ;
+}
+
+h4 {
+    font-size: 1.2em;
+    padding: 1px;
+    color: white;
+    text-shadow: 2px 2px 0px black,
+        -2px 2px 0px black,
+        2px -2px 0px black,
+        -2px -2px 0px black;
+    transition: font-size 0.5s ease;
+    margin: 0 0 0 50px;
+}
+
+@keyframes example {
+    from {
+        left: 2%;
+        background-color: rgb(255, 0, 0);
+    }
+
+    to {
+        left: calc(90% - 50px);
+        background-color: blue;
+    }
+}
+
+.linear {
+    animation: example 2s linear infinite alternate;
+}
+
+.ease {
+    animation: example 2s ease infinite alternate;
+}
+
+.ease-in {
+    animation: example 2s ease-in infinite alternate;
+}
+
+.ease-out {
+    animation: example 2s ease-out infinite alternate;
+}
+
+.ease-in-out {
+    animation: example 2s ease-in-out infinite alternate;
+}
+
+.seguidor {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: absolute;
+    pointer-events: none;
+    transition: transform 0.1s ease-out;
+}
+
+.grid-container {
+    display: inline-grid;
+    min-width: 100%;
+    border-radius: 100px;
+    grid-template-columns: repeat(6, 15vw);
+    justify-content: center;
+}
+
+.scale:hover {
+    transform: scale(1.2);
+}
+
+.scaleX:hover {
+    transform: scaleX(2);
+}
+
+.scaleY:hover {
+    transform: scaleY(2);
+}
+
+.rotate:hover {
+    transform: rotate(90deg);
+}
+
+.rotateX:hover {
+    transform: rotateX(60deg);
+}
+
+.rotateY:hover {
+    transform: rotateY(180deg);
+}
+
+.translate:hover {
+    transform: translate(20px, -10px);
+}
+
+.translateX:hover {
+    transform: translateX(50px);
+}
+
+.translateY:hover {
+    transform: translateY(-20px);
+}
+
+.skew:hover {
+    transform: skew(10deg, 20deg);
+}
+
+.skewX:hover {
+    transform: skewX(25deg);
+}
+
+.skewY:hover {
+    transform: skewY(25deg);
+}
