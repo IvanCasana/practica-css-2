@@ -58,7 +58,7 @@
 }
 
 .imagen {
-  background-image: url(./assets/background.webp);
+  background-image: url(/assets/background.webp);
   background-size: cover;
   background-position: center;
 }
@@ -74,7 +74,7 @@
 }
 
 .repeat {
-  background-image: url(./assets/repeatimg.webp);
+  background-image: url(/assets/repeatimg.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
